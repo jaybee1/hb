@@ -132,26 +132,7 @@ $('.counter').counterUp({
 });
 
 
-/*----- Subscription Form ----- */
-
-$(document).ready(function() {
-  // jQuery Validation
-  $("#signup").validate({
-    // if valid, post data via AJAX
-    submitHandler: function(form) {
-      $.post("assets/php/subscribe.php", { email: $("#email").val() }, function(data) {
-        $('#response').html(data);
-      });
-    },
-    // all fields are required
-    rules: {
-      email: {
-        required: true,
-        email: true
-      }
-    }
-  });
-});
+/*----- Subscription Form - Deleted for HBox----- */
 
 /*-------- Video PLay button ---- */
 
